@@ -1,0 +1,117 @@
+{
+	// Place your snippets for javascript here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	"Print to console": {
+		"prefix": "log",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Log output to console"
+	},
+
+	"Asyn Http Request Javascript": {
+		"prefix": "asynchttp",
+		"body": [
+			"async ${1}() {",
+			"    try {",
+			"        ",
+			"    } catch (error) {",
+			"        console.log(error)",
+			"        console.log(error.response)",
+			"        this.setState({ isLoading: false})",
+			"    }",
+			"}"
+		],
+		"description": "Asyn Http Request Javascript"
+	},
+
+	"Default Http Request": {
+		"prefix": "httpRequest",
+		"body": [
+			".then((res) => {",
+			"    console.log(res.data)",
+			"    this.setState({ isLoading: false })",
+			"}).catch((err) => {",
+			"    console.log(err.response)",
+			"    this.setState({isLoading : false})",
+			"})"
+		],
+		"description": "Default Http Request"
+	},
+
+	"Initial State React Native": {
+		"prefix": "state",
+		"body": [
+			"this.state = {",
+			"  isLoading : false",
+			"}"
+		],
+		"description": "Initial State React Native"
+	},
+
+	"Import Default React Native Component": {
+		"prefix": "rnClassImport",
+		"body": [
+			"import React from 'react';",
+			"import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';"
+		],
+		"description": "Import Default React Native Component"
+	},
+
+	"React Native Default Class Component": {
+		"prefix": "rnClass",
+		"body": [
+			"class ${1} extends React.Component {",
+			"    constructor(props) {",
+			"        super(props)",
+			"    }",
+			"    render() {",
+			"        return (",
+			"            <View style={styles.main}>",
+			"                <Text>${1} Component</Text>",
+			"            </View>",
+			"        )",
+			"    }",
+			"}",
+			"",
+			"const styles = StyleSheet.create({",
+			"    main: {",
+			"        flex : 1",
+			"    }",
+			"})",
+			"",
+			"export default ${1}"
+		],
+		"description": "React Native Default Class Component"
+	},
+
+	"Set State React Native": {
+		"prefix": "setState",
+		"body": [
+			"this.setState({${1}})"
+		],
+		"description": "Set State React Native"
+	},
+
+	"Destructuring State React Native": {
+		"prefix": "desctr",
+		"body": [
+			"let { ${1:isLoading} } = this.state;"
+		],
+		"description": "Destructuring State React Native"
+	},
+
+	"Constructor Class Component React Native": {
+		"prefix": "construct",
+		"body": [
+			"constructor(props) {",
+			"    super(props)",
+			"}"
+		],
+		"description": "Constructor Class Component React Native"
+	}
+}
